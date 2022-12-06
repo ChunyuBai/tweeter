@@ -1,0 +1,30 @@
+.tweet-container {
+  border: 2px solid black;
+} 
+
+.tweet-container:hover {
+  box-shadow: 10px 5px 10px black;
+}
+
+.tweet-container i:hover {
+  color: rgb(163, 163, 55);
+}
+
+.tweet-container .userTweet {
+  border-bottom: 2px solid black;
+  justify-content: center;
+}
+
+.tweet-container footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-container header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userTweet {
+  padding: 20px;
+}

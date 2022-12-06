@@ -15,15 +15,85 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <!-- character counter -->
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Nav style -->
+    <link rel="stylesheet" href="./styles/nav.css">
+
+    <!--Header style-->
+    <link rel="stylesheet" href="./styles/header.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Form style -->
+    <link rel="stylesheet" href="./styles/new-tweet.css"> 
+    <!-- user tweet style -->
+    <link rel="stylesheet" href="./styles/userTweet.css">
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div>
+        <span id="icon">tweeter</span>
+      </div>
+      <div class="new-tweet">
+        <div><span>Write</span> a new tweeter</div>
+        <i class="fa-solid fa-angles-down"></i>
+      </div>
     </nav>
 
+    <header>
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Your Name</h2>
+      </div>
+    </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form class="tweet-form">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea class="form_textarea" name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+    <!-- my tweets -->
+      <section class ="tweet-container">
+          <article id="tweet">
+            <header>
+              <div class="userInfo">
+                UserA
+              </div>
+              <div class="userAccount">
+                @ABC
+              </div>
+            </header>
+             <div class="userTweet">This is my tweet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda atque enim suscipit deserunt iste minus incidunt ea mollitia debitis laborum, nulla inventore obcaecati voluptas blanditiis vero. Sed, ad possimus.</div>
+            <footer>
+              <div class="date">10 days ago</div>
+              <div class="interactButton">
+                <i class="fa-solid fa-flag"></i>
+                <i class="fa-solid fa-retweet"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </footer>
+          </article>
+      </section>
+    </main>
   </body>
 </html>
