@@ -6,6 +6,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -14,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" defer src="/scripts/client.js"></script>
     <!-- character counter -->
     <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 
@@ -35,6 +37,7 @@
     <link rel="stylesheet" href="./styles/new-tweet.css"> 
     <!-- user tweet style -->
     <link rel="stylesheet" href="./styles/userTweet.css">
+  
 
   </head>
 
@@ -63,35 +66,19 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <span class="erroMessage"></span>
         <form class="tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea class="form_textarea" name="text" id="tweet-text"></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button type="submit" id="submitTweet">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
     <!-- my tweets -->
-      <section class ="tweet-container">
-          <article id="tweet">
-            <header>
-              <div class="userInfo">
-                UserA
-              </div>
-              <div class="userAccount">
-                @ABC
-              </div>
-            </header>
-             <div class="userTweet">This is my tweet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate assumenda atque enim suscipit deserunt iste minus incidunt ea mollitia debitis laborum, nulla inventore obcaecati voluptas blanditiis vero. Sed, ad possimus.</div>
-            <footer>
-              <div class="date">10 days ago</div>
-              <div class="interactButton">
-                <i class="fa-solid fa-flag"></i>
-                <i class="fa-solid fa-retweet"></i>
-                <i class="fa-solid fa-heart"></i>
-              </div>
-            </footer>
+      <section id="tweet-container">
+            
           </article>
       </section>
     </main>

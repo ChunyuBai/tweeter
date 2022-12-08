@@ -1,10 +1,23 @@
 body > header {
   background-color: #00594d;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  height: 630px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-flow: column;
+  margin: 10em 2em;
+  height: 20em;
+  justify-content: space-between;
 }
 
+
+/* special size for table  */
+@media only screen and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  body > header {
+    width: 100%;
+    margin: 0;
+    height: 25em;
+    justify-content: center;
+    padding: 14em;
+  }
+}

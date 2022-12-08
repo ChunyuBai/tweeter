@@ -19,6 +19,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
 }
 
 .container {
@@ -31,3 +32,10 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+/* special size for table  */
+ @media only screen and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  body {
+    display: block;
+  }
+}

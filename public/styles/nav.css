@@ -31,3 +31,11 @@ nav span {
 }
 
 
+/* special size for table  */
+@media only screen and (max-width: 1024px) {
+  /* Write Tablet only CSS here */
+  nav {
+    background-color: #00594d;
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+  }
+}

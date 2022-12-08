@@ -12,6 +12,7 @@ div {
 
 section.new-tweet  {
   margin-bottom: 10px;
+  margin-top: 10em;
   padding: 10px;
 }
 
@@ -37,4 +38,8 @@ button {
 
 output {
   font-family: 'Bungee', cursive;
+}
+
+.erroMessage {
+  display: none;
 }

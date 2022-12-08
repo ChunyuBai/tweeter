@@ -1,26 +1,21 @@
-.tweet-container {
-  border: 2px solid black;
-} 
 
-.tweet-container:hover {
-  box-shadow: 10px 5px 10px black;
-}
-
-.tweet-container i:hover {
+#tweet-container i:hover {
   color: rgb(163, 163, 55);
 }
 
-.tweet-container .userTweet {
+#tweet-container .userTweet {
   border-bottom: 2px solid black;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.tweet-container footer {
+#tweet-container footer {
   display: flex;
   justify-content: space-between;
 }
 
-.tweet-container header {
+#tweet-container header {
   display: flex;
   justify-content: space-between;
 }
@@ -28,3 +23,12 @@
 .userTweet {
   padding: 20px;
 }
+
+#tweet-container .tweet{
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+#tweet-container .tweet:hover {
+  box-shadow: 10px 5px 10px black;
+}
+
