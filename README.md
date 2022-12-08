@@ -18,4 +18,7 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
+!["Screenshot of my desktop version"](https://github.com/ChunyuBai/tweeter/blob/master/docs/desktop.png)
+!["Screenshot of my table version"](https://github.com/ChunyuBai/tweeter/blob/master/docs/table2.png)
+!["Screenshot of my table version"](https://github.com/ChunyuBai/tweeter/blob/master/docs/table1.png)
 
